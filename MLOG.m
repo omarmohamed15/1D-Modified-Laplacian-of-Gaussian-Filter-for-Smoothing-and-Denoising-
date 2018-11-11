@@ -41,6 +41,7 @@ else
 len   = N/2;    
 n=[-len:-1 1:len];
 end
+n(n==0)=eps;
 
 % 1D Gaussian filter, where sigma represents the standard deviation of the Gaussian filter and n is the Gaussian index.
 % For example : if you need to construct a filter with N cofficients,
